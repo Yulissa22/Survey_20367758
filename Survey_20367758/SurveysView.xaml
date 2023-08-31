@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Survey_20367758.SurveysView"
+             Title="Encuentas">
+    <VerticalStackLayout>
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button Text="+" x:Name="AddSurvey" Clicked="AddSurvey_Clicked" BackgroundColor="LightCyan" TextColor="DarkBlue" 
+                    BorderColor="Aquamarine" BorderWidth="3" WidthRequest="200" FontSize="25" />
+            <StackLayout Grid.Row="1" x:Name="SurveysPanel"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
